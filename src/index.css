@@ -1,13 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "Poppins", sans-serif; /* Set Poppins as the default font */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom animations */
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .hidden {
+    visibility: hidden;
+} */
+
+.visible {
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+/* Adjust your animations */
+.slide-left-right1 {
+    animation: slideLeftRight 2s ease forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.slide-left-right2 {
+    animation: slideLeftRight 2s ease 0.1s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.slide-left-right3 {
+    animation: slideLeftRight 2s ease 0.4s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.slide-right-left1 {
+    animation: slideRightLeft 2s ease forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.slide-right-left2 {
+    animation: slideRightLeft 2s ease 0.1s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.slide-right-left3 {
+    animation: slideRightLeft 2s ease 0.4s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.fade-in1 {
+    animation: fadeIn 1s ease forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.fade-in2 {
+    animation: fadeIn 1s ease 0.1s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
+}
+
+.fade-in3 {
+    animation: fadeIn 1s ease 0.4s forwards;
+    visibility: visible; /* Make it visible when the animation starts */
 }
