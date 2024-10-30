@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+    const navigate = useNavigate();
+
     return (
         <div className="font-sans font-medium">
             {/* Landing title page */}
@@ -17,7 +20,6 @@ export default function About() {
                     style={{
                         width: "100%",
                         height: "100%", // 54.688rem
-                        // objectFit: "cover", // You can use cover or contain as needed
                     }}
                     alt="Piano Portrait"
                 />
@@ -39,56 +41,49 @@ export default function About() {
             </div>
 
             {/* Content Starts here */}
-            <div className="bg-cream">
-                {/* <div className="card bg-base-100 w-96 shadow-xl">
-                    <figure className="px-10 pt-10">
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes"
-                            className="rounded-xl"
-                        />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div> */}
-
-                <div className="flex flex-col items-center border-2 border-red-500">
-                    <div className="w-[50%] py-48 border-2 border-blue-500">
-                        <p className="text-maroon mb-14 xl:text-xl">
-                            Previously Chantelle had the opportunity to study
-                            with internationally acclaimed soloists from a
-                            number of countries, namely Vincent David, Timothy
+            {/* Content Section */}
+            <div className="bg-maroon py-16">
+                <div className="max-w-7xl mx-auto flex flex-col items-center">
+                    <div className="w-[80%] md:w-[60%] bg-cream p-8 rounded-lg shadow-lg">
+                        <p className="text-maroon mb-4 xl:text-lg text-lg leading-6">
+                            Previously, Chantelle had the opportunity to study
+                            with internationally acclaimed soloists from various
+                            countries, including Vincent David, Timothy
                             McAllister, Claude Delangle, Steven Banks, Arno
                             Bornkamp, Simon Diricq, and many more.
                         </p>
 
-                        <p className="text-maroon mb-14 xl:text-xl">
+                        <p className="text-maroon mb-4 xl:text-lg text-lg leading-6">
                             This summer, Chantelle was grateful to receive a
                             $10,000 France-Canada grant from the University of
                             Toronto Faculty of Music to travel to France and
                             participate in the Université de Gap Saxophone music
                             academy. There she studied and performed with
-                            professors of the Paris Conservatoire, Claude
+                            professors from the Paris Conservatoire, Claude
                             Delange and Nicolas Arsenijevic, as well as
                             professors Mariano Garcia, Sandro Compagnon,
                             Christian Wirth, Joonatan Rautiola, and Philippe
-                            Braquart, and renowned pianists Fumi Ito and Cyril
-                            Lehn.
+                            Braquart, along with renowned pianists Fumi Ito and
+                            Cyril Lehn.
                         </p>
 
-                        <p className="text-maroon mb-14 xl:text-xl">
+                        <p className="text-maroon mb-4 xl:text-lg text-lg leading-6">
                             Chantelle also had the fortune of participating in
-                            the Orford summer academy in Quebec studying under
+                            the Orford summer academy in Quebec, studying under
                             Timothy McAllister with the support of a
-                            scholarship. In January she will have the
+                            scholarship. In January, she will have the
                             opportunity to perform a concerto in Professor
                             Kenneth Tse’s saxophone masterclass.
                         </p>
+
+                        <div className="flex flex-col items-center">
+                            <button
+                                className="btn btn-outline text-chocolate border-chocolate hover:bg-brown hover:text-cream transition-all duration-300 py-2 px-4 rounded-lg"
+                                onClick={() => navigate("/")}
+                            >
+                                Back
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

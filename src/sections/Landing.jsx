@@ -1,30 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 export default function Landing() {
-    // const [isVisible, setIsVisible] = useState(false);
-    // const [isChocolateVisible, setIsChocolateVisible] = useState(false);
-
-    // useEffect(() => {
-    //     // Delay to make the first column visible
-    //     const timer = setTimeout(() => {
-    //         setIsVisible(true); // Set to true after a delay to trigger the first column animation
-    //     }, 1000); // Delay before making it visible
-
-    //     return () => clearTimeout(timer); // Clean up the timer on unmount
-    // }, []);
-
-    // useEffect(() => {
-    //     if (isVisible) {
-    //         const chocolateTimer = setTimeout(() => {
-    //             setIsChocolateVisible(true); // Show the chocolate rectangle after the first column animation starts
-    //         }, 2000); // Adjust this delay based on when you want the chocolate rectangle to appear
-
-    //         return () => clearTimeout(chocolateTimer); // Clean up the timer on unmount
-    //     }
-    // }, [isVisible]);
-
     return (
-        <div className="flex h-screen">
+        <div className="flex h-screen bg-maroon">
             {/* Left Column */}
             <div className="flex h-full max-h-screen flex-grow slide-left-right1">
                 <div

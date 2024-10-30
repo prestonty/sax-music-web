@@ -9,6 +9,7 @@ module.exports = {
                 chocolate: "#4C4039",
                 cream: "#EAE6E3",
                 maroon: "#1D181C",
+                blue: "#2fabb5",
             },
             fontFamily: {
                 sans: ["Graphik", "sans-serif"],

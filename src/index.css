@@ -6,6 +6,10 @@ body {
     font-family: "Poppins", sans-serif; /* Set Poppins as the default font */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Custom animations */
 @keyframes slideLeftRight {
     0% {
@@ -83,7 +87,7 @@ body {
 }
 
 .fade-in2 {
-    animation: fadeIn 1s ease 0.1s forwards;
+    animation: fadeIn 2s ease 0.1s forwards;
     visibility: visible; /* Make it visible when the animation starts */
 }
 
