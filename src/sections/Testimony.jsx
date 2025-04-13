@@ -32,7 +32,7 @@ export default function Testimony() {
 
                     <div className="chat chat-end mb-2">
                         <div className="chat-bubble bg-brown text-cream rounded-lg p-4 text-lg font-medium">
-                            LETS GOOOOO!!
+                            Wow I am very excited to see where you can go!
                         </div>
                     </div>
                 </div>
